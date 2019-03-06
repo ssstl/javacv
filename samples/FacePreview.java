@@ -71,8 +71,10 @@ import java.nio.ByteBuffer;
 import java.util.List;
 import org.bytedeco.javacpp.Loader;
 
-import static org.bytedeco.javacpp.opencv_core.*;
-import static org.bytedeco.javacpp.opencv_objdetect.*;
+import org.bytedeco.opencv.opencv_core.*;
+import org.bytedeco.opencv.opencv_objdetect.*;
+import static org.bytedeco.opencv.global.opencv_core.*;
+import static org.bytedeco.opencv.global.opencv_objdetect.*;
 
 // ----------------------------------------------------------------------
 

@@ -90,7 +90,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import org.bytedeco.javacpp.avutil;
+import org.bytedeco.ffmpeg.global.avutil;
 import org.bytedeco.javacv.FFmpegFrameFilter;
 import org.bytedeco.javacv.FFmpegFrameRecorder;
 import org.bytedeco.javacv.Frame;
