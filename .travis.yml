@@ -11,3 +11,5 @@ script:
   - "[[ $TRAVIS_PULL_REQUEST == 'false' ]] && export MAVEN_PHASE=deploy || export MAVEN_PHASE=install"
   - "mvn $MAVEN_PHASE -B -U -s $HOME/settings.xml"
   - "mvn $MAVEN_PHASE -B -U -s $HOME/settings.xml -f platform -D javacpp.platform=linux-x86_64"
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
